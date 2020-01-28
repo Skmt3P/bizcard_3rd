@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `R.Sakamoto's BizCard`,
-    description: `R.Sakamoto(@Skmt3P) is a President of OmusBridge OÜ | Front-end Engineer | Teacher  `,
+    title: `BizCard`,
+    description: `This page is an online business card.`,
     author: `@skmt3p`,
   },
   plugins: [
@@ -19,17 +19,57 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Skmt3P's BizCard`,
-        short_name: `Skmt3P's`,
+        short_name: `BizCard(S)`,
         start_url: `/`,
         background_color: `#BC002D`,
         theme_color: `#BC002D`,
         display: `minimal-ui`,
-        icon: `src/images/prof_real_mix icon.png`, // This path is relative to the root of the site.
+        icons: [{
+            src: 'icons/icon-72x72.png',
+            sizes: '72x72',
+            type: 'image/png',
+          },
+          {
+            src: 'icons/icon-96x96.png',
+            sizes: '96x96',
+            type: 'image/png',
+          },
+          {
+            src: 'icons/icon-128x128.png',
+            sizes: '128x128',
+            type: 'image/png',
+          },
+          {
+            src: 'icons/icon-144x144.png',
+            sizes: '144x144',
+            type: 'image/png',
+          },
+          {
+            src: 'icons/icon-152x152.png',
+            sizes: '152x152',
+            type: 'image/png',
+          },
+          {
+            src: 'icons/icon-192x192.png',
+            sizes: '192x192',
+            type: 'image/png',
+          },
+          {
+            src: 'icons/icon-384x384.png',
+            sizes: '384x384',
+            type: 'image/png',
+          },
+          {
+            src: 'icons/icon-512x512.png',
+            sizes: '512x512',
+            type: 'image/png',
+          },
+        ],
       },
     },
     'gatsby-plugin-no-sourcemaps',
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-offline`,
   ],
 }
