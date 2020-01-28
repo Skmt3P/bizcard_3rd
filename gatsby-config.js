@@ -25,6 +25,10 @@ module.exports = {
         theme_color: `#BC002D`,
         display: `minimal-ui`,
         icons: [{
+            src: 'icons/icon-48x48.png',
+            type: 'image/png',
+          },
+          {
             src: 'icons/icon-72x72.png',
             sizes: '72x72',
             type: 'image/png',
