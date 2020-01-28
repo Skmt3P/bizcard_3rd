@@ -15,7 +15,7 @@ const IndexPage = () => (
         target="_blank"
         rel="noopener noreferrer">
         {' '}
-        here{' '}
+        2019 BizCard{' '}
       </a>
       !{' '}
     </p>{' '}

@@ -24,8 +24,10 @@ module.exports = {
         background_color: `#BC002D`,
         theme_color: `#BC002D`,
         display: `minimal-ui`,
+        icon: 'icons/icon-48x48.png',
         icons: [{
             src: 'icons/icon-48x48.png',
+            sizes: '48x48',
             type: 'image/png',
           },
           {
