@@ -1,11 +1,9 @@
 import React from 'react'
-// import { Link } from 'gatsby'
 import Layout from '../components/layout'
-import Image from '../components/image'
 import SEO from '../components/seo'
 
 const IndexPage = () => (
-  <Layout>
+  <Layout filepath={'logo_yoko_bk.png'}>
     <SEO title="Skmt3P" />
     <h1> This page is under construction! </h1>{' '}
     <p>
@@ -19,13 +17,6 @@ const IndexPage = () => (
       </a>
       !{' '}
     </p>{' '}
-    <div
-      style={{
-        maxWidth: `300px`,
-        marginBottom: `1.45rem`,
-      }}>
-      <Image />
-    </div>{' '}
   </Layout>
 )
 
