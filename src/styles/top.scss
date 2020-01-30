@@ -1,0 +1,84 @@
+@import "variables.scss";
+
+.mainProf {
+  background-color: $lightGray;
+  height: 65%;
+
+  &__image {
+    width: 12vmax;
+    margin: 0 auto;
+    padding: 10px 0;
+  }
+
+  &__text {
+    font-size: 2vmax;
+    text-align: center;
+  }
+
+  &__name {
+    font-size: 3vmax;
+    margin-bottom: 4px;
+  }
+
+  &__link {
+    color: $lightRed;
+    text-decoration: none;
+  }
+}
+
+.mainButtons {
+  color: $white;
+  height: 35%;
+
+  &__button {
+    height: 33%;
+    padding-left: 10px;
+
+    &:last-child {
+      height: 34%;
+    }
+  }
+
+  &__text {
+    font-size: 4vmax;
+  }
+
+  &--red {
+    background-color: $red;
+  }
+
+  &--blue {
+    background-color: $blue;
+  }
+
+  &--skyblue {
+    background-color: $skyblue;
+  }
+}
+
+// non SP
+@media screen and (min-width: 560px) {
+  .mainProf {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    width: 50%;
+
+    &__image {
+      width: 30%;
+      margin: 0;
+    }
+
+    &__text {
+      margin-left: 24px;
+      text-align: left;
+    }
+
+  }
+
+  .mainButtons {
+    height: 100%;
+    width: 50%;
+  }
+}

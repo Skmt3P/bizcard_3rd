@@ -13,13 +13,13 @@ import '../styles/layout.scss'
 const Layout = props => {
   return (
     <>
-      <Header filepath={props.filepath} />
-      <main class="main"> {props.children} </main>{' '}
-      <footer class="footer">
-        <small class="footerCopyright">
+      <Header filepath={props.filepath} />{' '}
+      <main className="main"> {props.children} </main>{' '}
+      <footer className="footer">
+        <small className="footerCopyright">
           {' '}
-          ©{new Date().getFullYear()}, @Skmt3P{' '}
-        </small>
+          © {new Date().getFullYear()}, @Skmt3P{' '}
+        </small>{' '}
       </footer>{' '}
     </>
   )
@@ -27,7 +27,7 @@ const Layout = props => {
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
-  filepath: [PropTypes.node.isRequired, PropTypes.string],
+  filepath: PropTypes.string.isRequired,
 }
 
 export default Layout
