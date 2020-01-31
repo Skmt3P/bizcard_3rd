@@ -8,8 +8,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Header from './header'
-import 'resize-observer-polyfill'
-import useResizeObserver from 'use-resize-observer'
+import useResizeObserver from 'use-resize-observer/polyfilled'
 import '../styles/layout.scss'
 
 const Layout = props => {
