@@ -8,6 +8,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Header from './header'
+import 'resize-observer-polyfill'
 import useResizeObserver from 'use-resize-observer'
 import '../styles/layout.scss'
 
@@ -21,7 +22,7 @@ const Layout = props => {
   }
   return (
     <>
-      <Header filepath={props.filepath} ref={ref} />
+      <Header filepath={props.filepath} ref={ref} />{' '}
       <main className="main" style={styleObj}>
         {' '}
         {props.children}{' '}

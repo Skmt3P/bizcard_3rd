@@ -3,6 +3,3 @@
  *
  * See: https://www.gatsbyjs.org/docs/ssr-apis/
  */
-
-import 'intersection-observer'
-import 'resize-observer-polyfill'
