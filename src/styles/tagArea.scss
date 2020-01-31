@@ -1,0 +1,30 @@
+@import 'variables.scss';
+
+.tagArea {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  align-self: center;
+  justify-content: space-between;
+
+  &Tag {
+    margin: 5px;
+    background-color: $white;
+    border: 1px solid #000;
+    border-radius: 10px;
+    width: 28%;
+
+    &__link {
+      text-decoration: none;
+    }
+
+    &__text {
+      color: $black;
+      display: flex;
+      align-items: center;
+      font-size: 1.75vmax;
+      justify-content: space-evenly;
+      padding: 4px;
+    }
+  }
+}

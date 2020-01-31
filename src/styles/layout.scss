@@ -1,4 +1,4 @@
-@import "variables.scss";
+@import 'variables.scss';
 
 // Gatsby Default //
 html {
@@ -379,7 +379,6 @@ hgroup {
 }
 
 ul {
-  margin-left: 1.45rem;
   margin-right: 0;
   margin-top: 0;
   padding-bottom: 0;
@@ -388,6 +387,7 @@ ul {
   padding-top: 0;
   list-style-position: outside;
   list-style-image: none;
+  list-style: none;
 }
 
 ol {
@@ -479,7 +479,6 @@ fieldset {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-
 }
 
 blockquote {
@@ -490,7 +489,6 @@ blockquote {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-
 }
 
 form {
@@ -501,7 +499,6 @@ form {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-
 }
 
 noscript {
@@ -512,7 +509,6 @@ noscript {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-
 }
 
 iframe {
@@ -523,7 +519,6 @@ iframe {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-
 }
 
 hr {
@@ -547,7 +542,6 @@ address {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-
 }
 
 b {
@@ -574,12 +568,12 @@ ul li {
   padding-left: 0;
 }
 
-li>ol {
+li > ol {
   margin-left: 1.45rem;
   margin-top: calc(1.45rem / 2);
 }
 
-li>ul {
+li > ul {
   margin-left: 1.45rem;
   margin-top: calc(1.45rem / 2);
 }

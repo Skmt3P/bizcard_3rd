@@ -8,13 +8,24 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Header from './header'
+import useResizeObserver from 'use-resize-observer'
 import '../styles/layout.scss'
 
 const Layout = props => {
+  const { ref, width = 0, height = 0 } = useResizeObserver()
+  const windowHeight = !!(typeof window !== 'undefined')
+    ? window.innerHeight
+    : 0
+  const styleObj = {
+    height: windowHeight - height + width - width,
+  }
   return (
     <>
-      <Header filepath={props.filepath} />{' '}
-      <main className="main"> {props.children} </main>{' '}
+      <Header filepath={props.filepath} ref={ref} />
+      <main className="main" style={styleObj}>
+        {' '}
+        {props.children}{' '}
+      </main>{' '}
       <footer className="footer">
         <small className="footerCopyright">
           {' '}
