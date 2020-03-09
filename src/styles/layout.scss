@@ -675,8 +675,31 @@ pre tt:after {
 }
 
 // Original
+#gatsby-focus-wrapper {
+  // only SP
+  @media only screen and (max-width: 559px) {
+    height: 100vh;
+  }
+}
+
+.header {
+  // only SP
+  @media only screen and (max-width: 559px) {
+    min-height: 10vh;
+  }
+}
+
 .main {
   height: 100%;
+  // only SP
+  @media only screen and (max-width: 559px) {
+    max-height: 90vh;
+  }
+  // no SP
+  @media screen and (min-width: 560px) {
+    display: flex;
+    height: 100%;
+  }
 }
 
 .footer {
@@ -687,27 +710,4 @@ pre tt:after {
   height: 20px;
   right: 0;
   margin-right: 10px;
-}
-
-// only SP
-@media only screen and (max-width: 559px) {
-  #gatsby-focus-wrapper {
-    height: 100vh;
-  }
-
-  .header {
-    min-height: 10vh;
-  }
-
-  .main {
-    max-height: 90vh;
-  }
-}
-
-// non SP
-@media screen and (min-width: 560px) {
-  .main {
-    display: flex;
-    height: 100%;
-  }
 }

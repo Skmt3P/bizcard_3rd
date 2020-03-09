@@ -5,16 +5,35 @@
   height: 55%;
   overflow-y: scroll;
   padding: 10px 0;
+  // non SP
+  @media screen and (min-width: 560px) {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    width: 50%;
+    flex-wrap: wrap;
+  }
 
   &__image {
     width: 12vmax;
     margin: 0 auto;
     padding: 10px 0;
+    // non SP
+    @media screen and (min-width: 560px) {
+      width: 30%;
+      margin: 0;
+    }
   }
 
   &__text {
     font-size: 2vmax;
     text-align: center;
+    // non SP
+    @media screen and (min-width: 560px) {
+      margin-left: 24px;
+      text-align: left;
+    }
   }
 
   &__name {
@@ -36,19 +55,27 @@
 .mainButtons {
   color: $white;
   height: 45%;
+  // non SP
+  @media screen and (min-width: 560px) {
+    height: 100%;
+    width: 50%;
+  }
 
   &__button {
     height: 33%;
+    width: 100%;
+    text-align: left;
     padding-left: 10px;
-
     &:last-child {
       height: 34%;
     }
   }
 
   &__text {
-    font-size: 4vmax;
+    font-size: 3vmax;
     padding: 5px;
+    height: 100%;
+    width: 100%;
   }
 
   &--red {
@@ -61,32 +88,5 @@
 
   &--skyblue {
     background-color: $skyblue;
-  }
-}
-
-// non SP
-@media screen and (min-width: 560px) {
-  .mainProf {
-    align-items: center;
-    display: flex;
-    height: 100%;
-    justify-content: center;
-    width: 50%;
-    flex-wrap: wrap;
-
-    &__image {
-      width: 30%;
-      margin: 0;
-    }
-
-    &__text {
-      margin-left: 24px;
-      text-align: left;
-    }
-  }
-
-  .mainButtons {
-    height: 100%;
-    width: 50%;
   }
 }

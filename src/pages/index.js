@@ -1,12 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import Image from '../components/image'
 import TagArea from '../components/tagArea'
+import Dialog from '../components/dialog'
 import '../utils/fontawesome'
 import '../styles/top.scss'
 
 const IndexPage = () => {
+  const [dialogVisible, setDialogVisible] = useState(false)
+  const [dialogCategory, setDialogCategory] = useState('')
   const tag = [
     {
       link: 'https://omusbridge.com',
@@ -63,6 +66,11 @@ const IndexPage = () => {
       icon: 'hand-holding-usd',
     },
   ]
+  const changeDialogVisible = category => {
+    const setCategory = category ? category : ''
+    setDialogCategory(setCategory)
+    setDialogVisible(!dialogVisible)
+  }
   return (
     <Layout filepath={'logo_yoko_bk.png'}>
       <SEO title="Skmt3P" />
@@ -96,18 +104,41 @@ const IndexPage = () => {
         </div>{' '}
       </div>{' '}
       <div className="mainButtons">
-        <div className="mainButtons__button mainButtons--red">
-          <h3 className="mainButtons__text"> About me. </h3>{' '}
-        </div>{' '}
-        <div className="mainButtons__button mainButtons--blue">
-          <h3 className="mainButtons__text"> What I do. </h3>{' '}
-        </div>{' '}
-        <div className="mainButtons__button mainButtons--skyblue">
+        <button
+          onClick={() => {
+            changeDialogVisible('about')
+          }}
+          className="mainButtons__button mainButtons--red">
           <h3 className="mainButtons__text">
-            What I like or <br /> be interested in .{' '}
+            {' '}
+            About me and <br /> What I do.{' '}
           </h3>{' '}
-        </div>{' '}
+        </button>{' '}
+        <button
+          onClick={() => {
+            changeDialogVisible('fav')
+          }}
+          className="mainButtons__button mainButtons--blue">
+          <h3 className="mainButtons__text">
+            {' '}
+            What I love or <br /> be interested in.{' '}
+          </h3>{' '}
+        </button>{' '}
+        <button
+          onClick={() => {
+            changeDialogVisible('feed')
+          }}
+          className="mainButtons__button mainButtons--skyblue">
+          <h3 className="mainButtons__text">My latest activity. </h3>{' '}
+        </button>{' '}
       </div>{' '}
+      <Dialog
+        dialogVisible={dialogVisible}
+        dialogCategory={dialogCategory}
+        onEventCallback={() => {
+          changeDialogVisible()
+        }}
+      />
     </Layout>
   )
 }
