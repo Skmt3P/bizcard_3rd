@@ -13,18 +13,18 @@ const TagArea = props => {
             href={tag.link}
             target="_blank"
             rel="noopener noreferrer">
-            <p className="tagAreaTag__text">
+            <span className="tagAreaTag__inner">
               {tag.icon && <FontAwesomeIcon icon={[tag.prefix, tag.icon]} />}
-              {tag.text}
-            </p>
+              <span className="tagAreaTag__text">{tag.text}</span>
+            </span>
           </a>
         </li>
       ) : (
         <li className="tagAreaTag">
-          <p className="tagAreaTag__text">
+          <span className="tagAreaTag__inner">
             {tag.icon && <FontAwesomeIcon icon={[tag.prefix, tag.icon]} />}
-            {tag.text}
-          </p>
+            <span className="tagAreaTag__text">{tag.text}</span>
+          </span>
         </li>
       ),
     )

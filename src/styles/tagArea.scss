@@ -6,26 +6,26 @@
   list-style: none;
   align-self: center;
   justify-content: space-between;
-
   &Tag {
     margin: 5px;
     background-color: $white;
     border: 1px solid #000;
     border-radius: 10px;
     width: 28%;
-
     &__link {
       text-decoration: none;
     }
-
-    &__text {
+    &__inner {
       color: $black;
       display: flex;
       align-items: center;
       font-size: 1.25vmax;
-      justify-content: space-evenly;
+      justify-content: center;
       padding: 4px;
       line-height: 1.75;
+    }
+    &__text {
+      margin-left: 4px;
     }
   }
 }

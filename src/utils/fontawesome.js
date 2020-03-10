@@ -1,5 +1,10 @@
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faHandHoldingUsd, faScroll } from '@fortawesome/free-solid-svg-icons'
+import {
+  faHandHoldingUsd,
+  faScroll,
+  faCode,
+  faMale,
+} from '@fortawesome/free-solid-svg-icons'
 import {
   faGithub,
   faLinkedin,
@@ -19,4 +24,6 @@ library.add(
   faSkype,
   faGithub,
   faHandHoldingUsd,
+  faCode,
+  faMale,
 )
