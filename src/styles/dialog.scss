@@ -14,7 +14,7 @@
   }
   &CloseButton {
     width: 100%;
-    height: 40%;
+    min-height: 45%;
     background-color: $gray;
     opacity: 0.5;
     // non SP
@@ -25,7 +25,6 @@
   }
   &Field {
     width: 100%;
-    height: 60%;
     padding: 4vmin;
     background-color: $lightGray;
     // non SP

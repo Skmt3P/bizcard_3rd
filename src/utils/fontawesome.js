@@ -12,7 +12,12 @@ import {
   faTwitter,
   faSkype,
 } from '@fortawesome/free-brands-svg-icons'
-import { faBuilding, faPaperPlane } from '@fortawesome/free-regular-svg-icons'
+import {
+  faBuilding,
+  faPaperPlane,
+  faHeart,
+  faSurprise,
+} from '@fortawesome/free-regular-svg-icons'
 
 library.add(
   faBuilding,
@@ -26,4 +31,6 @@ library.add(
   faHandHoldingUsd,
   faCode,
   faMale,
+  faHeart,
+  faSurprise,
 )

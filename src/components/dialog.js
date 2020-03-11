@@ -17,7 +17,7 @@ const Dialog = props => {
         What I love or <br /> be interested in.
       </h3>
     ) : (
-      <h3 className="mainDialogField__heading">My latest activity.</h3>
+      <h3 className="mainDialogField__heading">My latest activities.</h3>
     )
   const tag =
     props.dialogCategory === 'about'
@@ -87,11 +87,7 @@ const Dialog = props => {
             prefix: 'fas',
             icon: 'code',
           },
-          {
-            text: 'P5.js',
-            prefix: 'fas',
-            icon: 'code',
-          },
+
           {
             text: 'Git',
             prefix: 'fas',
@@ -108,7 +104,7 @@ const Dialog = props => {
             icon: 'code',
           },
           {
-            text: 'Graph QL',
+            text: 'Firebase',
             prefix: 'fas',
             icon: 'code',
           },
@@ -117,35 +113,68 @@ const Dialog = props => {
             prefix: 'fas',
             icon: 'code',
           },
+          {
+            text: 'Adobe XD',
+            prefix: 'fas',
+            icon: 'code',
+          },
+          {
+            text: 'Sketch',
+            prefix: 'fas',
+            icon: 'code',
+          },
+          {
+            text: 'Graph QL',
+            prefix: 'fas',
+            icon: 'code',
+          },
         ]
       : props.dialogCategory === 'fav'
       ? [
           {
-            text: 'Company',
+            text: 'Camping',
+            prefix: 'far',
+            icon: 'heart',
           },
           {
-            text: 'Resume',
+            text: 'Jazz',
+            prefix: 'far',
+            icon: 'heart',
           },
           {
-            text: 'Output',
+            text: 'Metal',
+            prefix: 'far',
+            icon: 'heart',
           },
           {
-            text: 'LinkedIn',
+            text: 'Gym',
+            prefix: 'far',
+            icon: 'heart',
           },
           {
-            text: 'Twitter',
+            text: 'Otaku',
+            prefix: 'far',
+            icon: 'heart',
           },
           {
-            text: 'Facebook',
+            text: 'Travel',
+            prefix: 'far',
+            icon: 'heart',
           },
           {
-            text: 'Skype',
+            text: 'P5.js',
+            prefix: 'far',
+            icon: 'surprise',
           },
           {
-            text: 'Github',
+            text: 'NoCode',
+            prefix: 'far',
+            icon: 'surprise',
           },
           {
-            text: 'Donation',
+            text: 'PWA',
+            prefix: 'far',
+            icon: 'surprise',
           },
         ]
       : []
