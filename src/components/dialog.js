@@ -179,7 +179,6 @@ const Dialog = props => {
         ]
       : []
   const emitClick = () => {
-    console.log(props)
     props.onEventCallback({
       name: 'Dialog',
       type: 'click',

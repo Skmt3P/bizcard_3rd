@@ -9,33 +9,97 @@
   overflow: hidden;
   display: flex;
   flex-wrap: wrap;
+  pointer-events: auto;
+  opacity: 1;
   &--hidden {
+    opacity: 0;
     display: none;
+    pointer-events: none;
+    &Field {
+      animation-name: slideOutSp;
+      animation-duration: 0.5s;
+      // non SP
+      @media screen and (min-width: 560px) {
+        animation-name: slideOutPc;
+        animation-duration: 0.5s;
+      }
+    }
   }
   &CloseButton {
     width: 100%;
-    min-height: 45%;
+    min-height: 100%;
     background-color: $gray;
     opacity: 0.5;
-    // non SP
-    @media screen and (min-width: 560px) {
-      width: 50%;
-      height: 100%;
-    }
   }
   &Field {
     width: 100%;
     padding: 4vmin;
     background-color: $lightGray;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    animation-name: slideInSp;
+    animation-duration: 0.5s;
     // non SP
     @media screen and (min-width: 560px) {
       width: 50%;
       height: 100%;
+      animation-name: slideInPc;
+      animation-duration: 0.5s;
     }
     &__heading {
       font-size: 4vmax;
       text-align: center;
       margin-bottom: 2vmax;
     }
+  }
+}
+
+// animation scss
+@keyframes slideInSp {
+  0% {
+    bottom: -150%;
+  }
+  70% {
+    bottom: 3%;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+
+@keyframes slideOutSp {
+  0% {
+    bottom: 0;
+  }
+  40% {
+    bottom: 3%;
+  }
+  100% {
+    bottom: -150%;
+  }
+}
+
+@keyframes slideInPc {
+  0% {
+    right: -150%;
+  }
+  70% {
+    right: 3%;
+  }
+  100% {
+    right: 0;
+  }
+}
+
+@keyframes slideOutPc {
+  0% {
+    right: 0;
+  }
+  40% {
+    right: -3%;
+  }
+  100% {
+    right: -150%;
   }
 }
