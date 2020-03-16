@@ -15,6 +15,7 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-polyfill-io`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -72,6 +73,13 @@ module.exports = {
             type: 'image/png',
           },
         ],
+      },
+    },
+    {
+      resolve: `gatsby-source-rss-feed`,
+      options: {
+        url: `https://scrapbox.io/api/feed/skmt3p`,
+        name: `Scrapbox`,
       },
     },
     'gatsby-plugin-sass',

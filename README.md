@@ -2,4 +2,4 @@
 
 Gatsby, React, Firebase, GitHub Actions
 
-* http://skmt3p.com
+- http://skmt3p.com

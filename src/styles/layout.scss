@@ -675,13 +675,6 @@ pre tt:after {
 }
 
 // Original
-#gatsby-focus-wrapper {
-  // only SP
-  @media only screen and (max-width: 559px) {
-    height: 100vh;
-  }
-}
-
 .header {
   // only SP
   @media only screen and (max-width: 559px) {
@@ -704,7 +697,7 @@ pre tt:after {
 
 .footer {
   color: $gray;
-  position: fixed;
+  position: absolute;
   bottom: 0;
   display: block;
   height: 20px;

@@ -87,20 +87,9 @@ const IndexPage = () => {
             rel="noopener noreferrer">
             OmusBridge OÜ{' '}
           </a>{' '}
-          <br />
-          President. <br />
-          (※工事中:{' '}
-          <a
-            className="mainProf__link"
-            href="https://scrapbox.io/skmt3p/2020%E5%90%8D%E5%88%BA%E3%82%B5%E3%82%A4%E3%83%88%E6%94%B9%E4%BF%AE%E6%A1%88%E5%86%85"
-            target="_blank"
-            rel="noopener noreferrer">
-            Scrapbox{' '}
-          </a>{' '}
-          参照){' '}
         </h2>{' '}
         <div className="mainProf__tag">
-          <TagArea tag={tag} />{' '}
+          <TagArea tag={tag} key={tag.text} />{' '}
         </div>{' '}
       </div>{' '}
       <div className="mainButtons">

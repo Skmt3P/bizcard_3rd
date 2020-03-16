@@ -1,5 +1,6 @@
 import React from 'react'
 import TagArea from '../components/tagArea'
+import FeedArea from '../components/feedArea'
 import '../utils/fontawesome'
 import '../styles/dialog.scss'
 
@@ -178,6 +179,12 @@ const Dialog = props => {
           },
         ]
       : []
+  const contentEl =
+    props.dialogCategory === 'about' || props.dialogCategory === 'fav' ? (
+      <TagArea tag={tag} key={tag.text} />
+    ) : (
+      <FeedArea />
+    )
   const emitClick = () => {
     props.onEventCallback({
       name: 'Dialog',
@@ -195,9 +202,7 @@ const Dialog = props => {
       />
       <div className="mainDialogField">
         {headingEl}
-        <div className="mainDialogField__tag">
-          <TagArea tag={tag} />{' '}
-        </div>{' '}
+        {contentEl}
       </div>
     </div>
   )

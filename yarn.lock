@@ -4679,6 +4679,13 @@ gatsby-plugin-page-creator@^2.1.38:
     lodash "^4.17.15"
     micromatch "^3.1.10"
 
+gatsby-plugin-polyfill-io@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-polyfill-io/-/gatsby-plugin-polyfill-io-1.1.0.tgz#61424c773ae123680e50b9a6692a4b939a1e6e13"
+  integrity sha512-v2uiJvuAhtUU/30c257+KBj+hA0pMxpsCdq7PIcXLdGZlVhXJTporD5WIEPP5jeGl3zOp4y3FdQF1C10wlt1MA==
+  dependencies:
+    babel-runtime "^6.26.0"
+
 gatsby-plugin-react-helmet@^3.1.21:
   version "3.1.21"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-react-helmet/-/gatsby-plugin-react-helmet-3.1.21.tgz#659f31020295f42d017e2eb03175d73516ab824d"
@@ -4743,6 +4750,14 @@ gatsby-source-filesystem@^2.1.46:
     read-chunk "^3.2.0"
     valid-url "^1.0.9"
     xstate "^4.7.2"
+
+gatsby-source-rss-feed@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/gatsby-source-rss-feed/-/gatsby-source-rss-feed-1.1.1.tgz#f929e8bdb3b74bcfcc7402d0b1db100727f14301"
+  integrity sha512-plPlNJl74gQAnfocu6g0wH9bD5P2Radq4ujANhMWoc+fjIhOJAXy3Iq9FYXrZhMG/PrG2aYNPP0DGUzxP3tvCw==
+  dependencies:
+    lodash "^4.17.11"
+    rss-parser "^3.6.2"
 
 gatsby-telemetry@^1.1.47:
   version "1.1.47"
@@ -8295,6 +8310,11 @@ promise-inflight@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/promise-inflight/-/promise-inflight-1.0.1.tgz#98472870bf228132fcbdd868129bad12c3c029e3"
 
+promise-polyfill@^8.1.3:
+  version "8.1.3"
+  resolved "https://registry.yarnpkg.com/promise-polyfill/-/promise-polyfill-8.1.3.tgz#8c99b3cf53f3a91c68226ffde7bde81d7f904116"
+  integrity sha512-MG5r82wBzh7pSKDRa9y+vllNHz3e3d4CNj1PQE4BQYxLme0gKYYBm9YENq+UkEikyZ0XbiGWxYlVw3Rl9O/U8g==
+
 promise@^7.1.1:
   version "7.3.1"
   resolved "https://registry.yarnpkg.com/promise/-/promise-7.3.1.tgz#064b72602b18f90f29192b8b1bc418ffd1ebd3bf"
@@ -8951,6 +8971,14 @@ ripemd160@^2.0.0, ripemd160@^2.0.1:
   dependencies:
     hash-base "^3.0.0"
     inherits "^2.0.1"
+
+rss-parser@^3.6.2, rss-parser@^3.7.5:
+  version "3.7.5"
+  resolved "https://registry.yarnpkg.com/rss-parser/-/rss-parser-3.7.5.tgz#f183148e81880f2e48166e09e9277b3c86de6de4"
+  integrity sha512-bUbAJfiuNyR/IGpYie6ro6x7X26QMWHxz1Sy9qkPyU/vYwbf3YdopQJIIELwdp3FCU4evcyetOD8bA8fgS+SqA==
+  dependencies:
+    entities "^1.1.1"
+    xml2js "^0.4.19"
 
 run-async@^2.2.0:
   version "2.3.0"
@@ -10809,7 +10837,7 @@ xml-parse-from-string@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/xml-parse-from-string/-/xml-parse-from-string-1.0.1.tgz#a9029e929d3dbcded169f3c6e28238d95a5d5a28"
 
-xml2js@^0.4.5:
+xml2js@^0.4.19, xml2js@^0.4.5:
   version "0.4.23"
   resolved "https://registry.yarnpkg.com/xml2js/-/xml2js-0.4.23.tgz#a0c69516752421eb2ac758ee4d4ccf58843eac66"
   dependencies:
