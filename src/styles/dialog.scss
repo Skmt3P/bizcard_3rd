@@ -19,7 +19,7 @@
   }
   &Field {
     width: 100%;
-    max-height: 50%;
+    height: 50%;
     padding: 4vmin;
     background-color: $lightGray;
     position: absolute;
@@ -48,7 +48,9 @@
     animation-name: displayNone;
     animation-duration: 0.1s;
     animation-delay: 0.5s;
-    &Field {
+    .mainDialogField {
+      height: 0;
+      width: 0;
       animation-name: slideOutSp;
       animation-duration: 0.5s;
       // non SP

@@ -79,7 +79,8 @@ const IndexPage = () => {
           <Image filepath={'icon_main.png'} />{' '}
         </div>{' '}
         <h2 className="mainProf__text">
-          <p className="mainProf__name"> Ryu Sakamoto </p>{' '}
+          <span className="mainProf__name"> Ryu Sakamoto </span>
+          <span className="mainProf__subName"> (R.D.Sakamoto) </span>
           <a
             className="mainProf__link"
             href="https://omusbridge.com"
